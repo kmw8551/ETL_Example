@@ -124,8 +124,9 @@ if __name__ == "__main__":
 		main('거래소 명' , 시도 횟수)
 
 '''
-Kafka, Kinesis와 같은 Realtime 구현 상황을 위해 서버에 매 3초 마다 (i번째 에서 종료)
+Kafka, Kinesis와 같은 Realtime 구현 상황을 위해 서버에 매 3초 마다 
 데이터를 요청하는 상황을 구현
+(i번째 에서 종료, 무한 루프 방지)
 '''
 
 ```
