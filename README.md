@@ -18,7 +18,7 @@
     - Bitmex ( Bitmex API GET 관련 모듈)
     - Bybit ( Bybit API GET 관련 모듈)
     - commons ( 거래소 모듈 공통 템플릿)
-    - doc (개발 시 발생하는 문서 관련 폴더)
+    - doc (개발 시 발생하는 문서 관련 폴더, **클래스 다이어그램**, **데이터베이스 스키마**, **플로우차트** )
     - ELT ( Transformation, Load 관련)
     - logfiles (logging구현 및 로그 파일)
     - init.py
