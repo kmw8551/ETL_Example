@@ -245,7 +245,7 @@ class bigdataDB(Resource):
                     return value.strftime('%Y-%m-%d %H:%M:%S.%f')
                 raise TypeError('not JSON serializable')
 
-            print(result)
+            #print('result : {}'.format(bool(result)))
             data = json.dumps(result, default=json_default)
             return data
    
