@@ -25,6 +25,10 @@
     - [app.py](http://app.py) (Flask / Swagger UI 기반 taker_volume API 제공 코드, 서버 실행 관련)
     - README.MD
     - [test.py](http://test.py) (패키지 실행 예시 코드 관련, main 함수 실행)
+- doc
+    - diagram_cryptoquant.png (클래스 다이어그램)
+    - database_schema.png (데이터베이스 스키마)
+    - flowchart_ETL.png (플로우차트)  
 
 ### 3. 개발 고려 사항 및 특징
 
@@ -58,6 +62,12 @@
     (가장 최근 시간에 생성된 row를 남겨 놓는 방식)
     5.  Swagger UI 가 지원되는 flask_restx 패키지를 통한 웹 UI 개선
     6. 'all_exchange' 사용 시 데이터 간 구별이 쉽지 않아 거래소의 명칭을 추가
+    7. database_schema는 요구사항 3개 테이블  + dim_exch ( 거래소 코드 및 이름 관련 디멘션 테이블)로 구성 
+
+3. 기타 고려사항(to)
+   - 거래소 데이터 가공 후 최종  api 거래소별 데이터 제공 확인여부를 파악하기 위해 부득이하게 exchange_name을 FK로 설정하여 3개 테이블을 구성하였습니다
+   - 원래 구상은 각 테이블 별 (exchange_id, timestamp, taker_buy_volume, taker_sell_volume, created_at)으로 구상하고 디멘션 테이블과 JOIN 연산을 통해 거래소 명을 파악하는 형태였습니다.
+   - 요구 사항은 맞췄습니다.
 
 ### 4. 작동 방법
 
