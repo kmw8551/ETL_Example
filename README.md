@@ -1,6 +1,6 @@
 # Cryptoquant Task
 
-작성자: Min Kang
+작성자: Min Woong Kang
 
 ---
 
