@@ -1,10 +1,10 @@
-# Cryptoquant Task
+#  Task
 
 작성자: Min Woong Kang
 
 ---
 
-과제 링크 : [Realtime Data ETL & Serving via REST API](https://www.notion.so/Realtime-Data-ETL-Serving-via-REST-API-fd8850b7fec64e73b56839d627bfe099) 
+요구사항 : [Realtime Data ETL & Serving via REST API](https://www.notion.so/Realtime-Data-ETL-Serving-via-REST-API-fd8850b7fec64e73b56839d627bfe099) 
 
 ### 1. 개요
 
