@@ -67,7 +67,7 @@
 3. 기타 고려사항(to)
    - 거래소 데이터 가공 후 최종  api 거래소별 데이터 제공 확인여부를 파악하기 위해 부득이하게 exchange_name을 FK로 설정하여 3개 테이블을 구성하였습니다
    - 원래 구상은 각 테이블 별 (exchange_id, timestamp, taker_buy_volume, taker_sell_volume, created_at)으로 구상하고 디멘션 테이블과 JOIN 연산을 통해 거래소 명을 파악하는 형태였습니다.
-   - 요구 사항은 맞췄습니다.
+   
 
 ### 4. 작동 방법
 
